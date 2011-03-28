@@ -40,6 +40,8 @@ alias sites="cd ~/Sites/"
 
 # Cd to MPG.
 alias mpg="cd ~/Scripts/Working/MPG/"
+# Cd to City Boyz Outdoors.
+alias cbo="cd ~/Sites/city_boyz_outdoors/"
 
 # Relative jumping aliases.
 alias ..="cd .."
