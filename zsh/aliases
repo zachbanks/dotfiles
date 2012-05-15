@@ -2,6 +2,9 @@
 # = Custom Aliases =
 # ==================
 
+# Make the default ls use ls -F.
+alias ls='ls -F'
+
 # Opens file in default editor.
 alias e="${editor}"
 
