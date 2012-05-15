@@ -1,0 +1,12 @@
+# This file is goes in the directory ~/.ssh/config
+# Make sure that this file has the right permissions using the command chmod 600 ~/.ssh/config
+
+# MacBook Pro
+Host mbp
+Hostname Zach-Banks-Macbook-Pro.local
+User zachbanks
+
+# iMac
+Host imac
+Hostname iMac.local
+User zachbanks
