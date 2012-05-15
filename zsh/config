@@ -31,7 +31,7 @@ plugins=(git osx ruby rails3 brew gem pip vi-mode)
 source $ZSH/oh-my-zsh.sh
 
 # Git and git flow completetion.
-source ~/.git-flow-completion.zsh
+# source ~/.git-flow-completion.zsh
 
 # ==============
 # = RVM Config =
