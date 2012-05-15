@@ -1,9 +1,19 @@
+# ===============
+# = Config Info =
+# ===============
+
 [user]
 	name = Zach Banks
 	email = zachbanks@me.com
 [github]
 	user = zachbanks
 	token = ce35dafc1ad4873b41b6a2f4ba32ad00
+
+# ==================
+# = Customizations =
+# ==================
+
+# Customizes the colors of the git prompt.
 [color]
 	ui = auto
 [color "branch"]
@@ -22,31 +32,20 @@
 [core]
 	editor = vim
 	autocrlf = input
-	safecrlf = true
+	safecrlf = true	
+
+# ===========
+# = Aliases =
+# ===========
+	
 [alias]
 	st = status
 	ci = commit
-  cid = commit -v
+  	cid = commit -v
 	cia = commit -a
-  lt = log --after="yesterday"
-	br = branch
-	type = cat-file -t
-	dump = cat-file -p
-	co = checkout
-	df = difftool
-	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short --color=auto
-	lg = log -p
-	lol = log --graph --decorate --pretty=oneline --abbrev-commit
-	lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
-	ls = ls-files
-    aa = add --all
-    dc = diff --cached
-[apply]
-	whitespace = nowarn
+	# Shows a nice condensed version of the git history.
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 	
-[difftool "Kaleidoscope"]
-	cmd = ksdiff-wrapper git \"$LOCAL\" \"$REMOTE\"
-[difftool]
-	prompt = false
-[diff]
-	tool = Kaleidoscope
+# Shows all the commits that were made today. Entered: git log.today
+[alias "log"]
+	today = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit  --after="yesterday"
