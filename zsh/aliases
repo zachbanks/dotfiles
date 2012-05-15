@@ -2,46 +2,50 @@
 # = Custom Aliases =
 # ==================
 
+# Opens file in default editor.
 alias e="${editor}"
-alias sourcez="source ~/.zshrc"
+
+# Reload zshrc.
+alias reload_zsh="source ~/.zshrc"
+
+# Reload bash_profile.
+alias reload_bp="source ~/.bash_profile"
+
 # CD to home directory.
 alias home="cd ~/"
+
 # Clear screen.
 alias c='clear'
+
+# CD to dotfiles.
+alias dotfiles='~/.dotfiles'
+
 # CD to Desktop.
 alias dtop='cd ~/Desktop/'
+
 # Open current dir in Finder.
 alias oif='open -a Finder .'
-# Open flash player.
-alias ofp='open ~/Documents/Files/flashplayer_10.1.sparseimage'
-# Print date.
-alias date="date '+%A %B %d %G - %H:%M:%S'"
-# CD to Test dir.
-alias coded="cd ~/Code/"
-# CD to Scripts dir.
-alias scriptsd="cd ~/Scripts/"
-# CD to home dir.  alias home="cd $HOME"
+
 # Empty trash.
 alias et="rm -rf ~/.Trash/*"
+
 # Open bash profile.
 alias obp="${editor} ~/.bash_profile"
+
 # Open zshrc.
 alias ozf="${editor} ~/.zshrc"
+
 # Restart computer.
 alias restart="sudo shutdown -r now"
+
 # Reload bash profile.
-alias sourcebp="source ~/.bash_profile"
-# Change directory to ~/zachbanks.
-alias zachbanks="cd /users/zachbanks/"
+alias reload_bp="source ~/.bash_profile"
+
 # Alias to ~/Documents/
 alias docs="cd ~/Documents/"
+
 # Alias to ~/Sites/
 alias sites="cd ~/Sites/"
-
-# Cd to MPG.
-alias mpg="cd ~/Scripts/Working/MPG/"
-# Cd to City Boyz Outdoors.
-alias cbo="cd ~/Sites/city_boyz_outdoors/"
 
 # Relative jumping aliases.
 alias ..="cd .."
@@ -51,56 +55,34 @@ alias ..4="cd ../../../.."
 
 # Copy pwd to pasteboard.
 alias cpwd="ruby -e 'puts %[\"#{Dir.pwd}\"]' | pbcopy"
+
+# Copies the command cd pwd; clear to the clipboard.
 alias cdpwd="ruby -e 'puts %[cd \"#{Dir.pwd}\"; clear;]' | pbcopy"
+
+# =======================
+# = Programming Aliases =
+# =======================
 
 # RSpec.
 alias rspec="rspec --color --format doc"
 
-# Last time over.
-alias lto='ruby ~/Test/Useful/days_since_date.rb'
-
-# History Typo Aliases.
-function ~ { echo 'HELLO'; }
-function @ { echo 'WORLD'; }
-
-# Aliases for mvim.
-
-# Open mvimrc.
-alias ovf="${editor} ~/.vimrc"
-
 # Rails aliases.
 alias olog="tail -f ./log/development.log"
-alias tsr="terminitor start rails"
 
 # Git aliases.
-# Starts git.
-alias g="git"
+alias g="git" # Starts git.
+
 # Open ~/.gitconfig.
 alias ogf="${editor} ~/.gitconfig"
-# Pushes to GitHub and Heroku.
-alias gpush="git push && git push heroku && git checkout develop"
 
 # Star wars movie.
 alias starwars="telnet towel.blinkenlights.nl"
-
-# Cucumber.
-alias cuke="cucumber"
-
-
-# This would work to but I like the function better.
-# alias sudo-shutdown='ruby ~/Test/use_reboot_message.rb'
-
-# The function runs when the sudo command is called.
-# function sudo { 
-# 	if [ "$1" = "shutdown" ]; then 
-# 		ruby ~/Test/use_reboot_message.rb
-# 	fi
-# }
 
 # =========
 # = Other =
 # =========
 
+# This snippet is used by RVM. DO NOT DELETE!
 # The following is a script created by the creator of rvm to update all of your Textmate bundles.
 function update_textmate_bundles {
 	#!/usr/bin/env bash
