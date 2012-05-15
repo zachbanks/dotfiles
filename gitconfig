@@ -49,3 +49,5 @@
 # Shows all the commits that were made today. Entered: git log.today
 [alias "log"]
 	today = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit  --after="yesterday"
+[merge]
+	tool = vimdiff
