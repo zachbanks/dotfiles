@@ -1,7 +1,6 @@
 let mapleader = ","
 set nocompatible
 
-colorscheme ir_black
 set number
 set ruler
 syntax on
