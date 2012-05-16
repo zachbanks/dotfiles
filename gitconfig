@@ -45,6 +45,8 @@
 	cia = commit -a
 	# Shows a nice condensed version of the git history.
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	last = log -1 HEAD
+	unstage = reset HEAD --
 	
 # Shows all the commits that were made today. Entered: git log.today
 [alias "log"]
