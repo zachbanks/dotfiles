@@ -7,6 +7,7 @@ export ZSH=$HOME/.oh-my-zsh
 
 # Set to the name theme to load.
 # Look in ~/.oh-my-zsh/themes/
+
 export ZSH_THEME="kennethreitz"
 
 # Themes I like.
@@ -15,14 +16,6 @@ export ZSH_THEME="kennethreitz"
 # afowler
 # robbyrussell
 
-# Set to this to use case-sensitive completion
-# export CASE_SENSITIVE="true"
-
-# Comment this out to disable weekly auto-update checks
-# export DISABLE_AUTO_UPDATE="true"
-
-# Uncomment following line if you want to disable colors in ls
-# export DISABLE_LS_COLORS="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
@@ -30,14 +23,35 @@ plugins=(git osx ruby rails3 brew gem pip vi-mode)
 
 source $ZSH/oh-my-zsh.sh
 
-# Git and git flow completetion.
-# source ~/.git-flow-completion.zsh
-
 # ==============
 # = RVM Config =
 # ==============
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
 
+# The following is a script created by the creator of rvm to update all of your Textmate bundles.
+function update_textmate_bundles {
+	#!/usr/bin/env bash
+
+	old_dir=${pwd}
+
+	mkdir -p /Library/Application\ Support/TextMate/
+
+	sudo chown -R $(whoami) /Library/Application\ Support/TextMate
+
+	cd /Library/Application\ Support/TextMate/
+
+	if [[ -d Bundles/.svn ]] ; then
+	  cd Bundles && svn up
+	else
+	  if [[ -d Bundles ]] ; then
+	    mv Bundles Bundles.old
+	  fi
+	  svn co http://svn.textmate.org/trunk/Bundles
+	fi
+
+	cd $old_dir
+
+}
 
 # =========
 # = Other =
