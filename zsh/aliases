@@ -80,33 +80,3 @@ alias ogf="${editor} ~/.gitconfig"
 
 # Star wars movie.
 alias starwars="telnet towel.blinkenlights.nl"
-
-# =========
-# = Other =
-# =========
-
-# This snippet is used by RVM. DO NOT DELETE!
-# The following is a script created by the creator of rvm to update all of your Textmate bundles.
-function update_textmate_bundles {
-	#!/usr/bin/env bash
-
-	old_dir=${pwd}
-
-	mkdir -p /Library/Application\ Support/TextMate/
-
-	sudo chown -R $(whoami) /Library/Application\ Support/TextMate
-
-	cd /Library/Application\ Support/TextMate/
-
-	if [[ -d Bundles/.svn ]] ; then
-	  cd Bundles && svn up
-	else
-	  if [[ -d Bundles ]] ; then
-	    mv Bundles Bundles.old
-	  fi
-	  svn co http://svn.textmate.org/trunk/Bundles
-	fi
-
-	cd $old_dir
-
-}

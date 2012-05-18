@@ -39,10 +39,12 @@
 # ===========
 	
 [alias]
-	st = status
+	st = status --short
 	ci = commit
   	cid = commit -v
 	cia = commit -a
+	co = checkout
+	rh = reset --hard
 	# Shows a nice condensed version of the git history.
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 	last = log -1 HEAD
