@@ -41,8 +41,6 @@
 [alias]
 	st = status --short
 	ci = commit
-  	cid = commit -v
-	cia = commit -a
 	co = checkout
 	rh = reset --hard
 	# Shows a nice condensed version of the git history.
