@@ -39,7 +39,7 @@
 # ===========
 	
 [alias]
-	st = status --short
+	st = status
 	ci = commit
 	co = checkout
 	rh = reset --hard
