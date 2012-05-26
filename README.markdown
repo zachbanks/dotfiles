@@ -7,7 +7,8 @@ Table of Contents
 * [Setup & Configuration][setup]
 * [Setup SSH to Use Public-Key Authentication][pk-ssh]
 
-[setup] Setting Up Your System
+[setup]:
+Setting Up Your System
 ===
 In order to setup a new machine with your dotfiles, do the following ...
 
@@ -28,7 +29,8 @@ Once you have the repo on your computer, if this is someone else's computer, mak
 This creates a symbolic link between the two files. **Note: Do not use relative paths with ln.** In other words, for `source_file` make sure that you use `~/.dotfiles/source_file` and for `link_file` use
 `~/.link_file`. If the dotfile already exists in your home directory, make sure you overwrite it by adding the `-f` flag to `ln`: `ln -sf source link`.
 
-[pk-ssh] Setting Up SSH Public-Key Authentication
+[pk-ssh]:
+Setting Up SSH Public-Key Authentication
 ===
 
 SSH public-key authentication allows you to not have to use a password when logging into a trusted computer via SSH. 
