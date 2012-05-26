@@ -12,7 +12,7 @@ In order to setup a new machine with your dotfiles, do the following ...
 ```
 If you are on a computer that you have setup SSH write access with Github, use the SSH protocol instead, otherwise you will have to delete the remote and re-add it when you want to push to Github.
 ```bash
-	got clone git@github.com:zachbanks/dotfiles.git .dotfiles
+	git clone git@github.com:zachbanks/dotfiles.git .dotfiles
 ```
 Once you have the repo on your computer, if this is someone else's computer, make sure you remove the `.git` directory and any other files that you will not need. Also remove any files that contain personal information.
 
