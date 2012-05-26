@@ -2,7 +2,12 @@ Introduction
 ===
 These files consist of Zach Banks' personal dotfiles. The sections in this README are mini tutorials on how to setup things in these dotfiles and is intended to be read by Zach Banks. If anyone is reading them, feel free to use any of the code in your own dotfiles. This READ should be used as a reference in case you forget how to do them.
 
-Setting Up Your System
+Table of Contents
+==
+* [Setup & Configuration][setup]
+* [Setup SSH to Use Public-Key Authentication][pk-ssh]
+
+[setup] Setting Up Your System
 ===
 In order to setup a new machine with your dotfiles, do the following ...
 
@@ -22,9 +27,8 @@ Once you have the repo on your computer, if this is someone else's computer, mak
 ```
 This creates a symbolic link between the two files. **Note: Do not use relative paths with ln.** In other words, for `source_file` make sure that you use `~/.dotfiles/source_file` and for `link_file` use
 `~/.link_file`. If the dotfile already exists in your home directory, make sure you overwrite it by adding the `-f` flag to `ln`: `ln -sf source link`.
-You need to update this soon!
 
-Setting Up SSH Public-Key Authentication
+[pk-ssh] Setting Up SSH Public-Key Authentication
 ===
 
 SSH public-key authentication allows you to not have to use a password when logging into a trusted computer via SSH. 
