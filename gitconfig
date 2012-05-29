@@ -31,8 +31,6 @@
 	untracked = cyan
 [core]
 	editor = vim
-	autocrlf = input
-	safecrlf = true	
 
 # ===========
 # = Aliases =
