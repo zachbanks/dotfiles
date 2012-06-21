@@ -10,3 +10,8 @@ User zachbanks
 Host imac
 Hostname iMac.local
 User zachbanks
+
+# CAS iMac
+Host cas_imac
+Hostname adminmac.as.kent.edu
+User admin
