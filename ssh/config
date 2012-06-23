@@ -15,3 +15,8 @@ User zachbanks
 Host cas_imac
 Hostname adminmac.as.kent.edu
 User admin
+
+# Home server.
+Host server
+Hostname 192.168.1.77
+User zachbanks 
