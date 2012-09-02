@@ -20,3 +20,8 @@ User admin
 Host neptune
 Hostname neptune.cs.kent.edu
 User zbanks
+
+# Kent State CS Poseidon Server
+Host poseidon
+Hostname poseidon.cs.kent.edu
+User zbanks
